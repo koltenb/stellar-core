@@ -228,7 +228,8 @@ format.
     * basereserve (uint32) This is what you would prefer the base reserve to
         be. It is in stroops.<br>
     * maxtxsize (uint32) This defines the maximum number of transactions to
-        include in a ledger. When too many transactions are pending, surge
+        include in a ledger in Protocol <= 10 and defines the maximum number of operations to include in a ledger in Protocol >= 11.  
+        When too many transactions are pending, surge
         pricing is applied. The instance picks the top maxtxsize transactions
         locally to be considered in the next ledger. Where transactions are
         ordered by transaction fee(lower fee transactions are held for later).
